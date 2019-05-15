@@ -1,0 +1,241 @@
+
+$colors:(
+"nav-back-color":#0C78AA,
+"nav-item-color":#99DBF9,
+"content-bar-color":#41BCF2,
+"circle-border-color":#47B9EB,
+"circle-back-color":#9ADCFA,
+"content-back-color":#D9F3FF,
+"strong-back-color":#70CBF7,
+"paragraph-color":#98D9FA,
+"carousel-color":#41BCF2
+
+);
+
+/*
+$colors:(
+"nav-back-color":white,
+"nav-item-color":white,
+"content-bar-color":black,
+"content-back-color":white,
+"circle-border-color":black,
+"circle-back-color":white,
+"content-back-color:":white,
+"strong-back-color":white,
+"paragraph-color":white,
+);
+*/
+
+
+
+body{
+    margin:0;
+    padding:0;
+   
+}
+
+
+.grid-wrapper{
+    width:100%;
+    height:100%;
+    /*
+    display:grid;
+    grid-template-rows:40% 1fr;
+    grid-template-areas:
+    "header"
+    "content";
+    */
+
+}
+.header{
+   
+    display:flex;
+    flex-flow:column wrap;
+
+   
+    nav 
+    {   
+        background-color:map-get($colors,"nav-back-color");
+        color:map-get($colors,"nav-back-color");
+        list-style-type:none;
+      
+      
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        padding:2vh 0;
+      
+       
+        li
+        {
+          
+            width:7vw;
+          
+            margin:0.25vh 2.34vw;
+            display:inline-block;
+            
+            box-sizing:border-box;
+           
+            
+           
+            
+        }
+       
+        li,.navbar-first,.navbar-last{
+            background-color:map-get($colors,"nav-item-color");
+        }
+      
+
+    }
+    .navbar-first{
+        width:8.45vw !important;
+        height:6vh !important;
+    }
+    .navbar-last{
+        width:9vw !important;
+    }
+     main{
+        display:grid;
+        height:50%;
+        color:map-get($colors,"content-bar-color");
+        background-color:map-get($colors,"strong-back-color");
+        justify-content: center;
+        padding:10vh 0;
+        flex-flow:row-wrap;
+        h1{
+            width:45vw;
+            text-align:justify;
+         
+           
+          }
+    }
+  
+
+}
+.text-center{
+     text-align: center;
+     width:100%;
+}
+.content{
+  
+    background-color:map-get($colors,"content-back-color");
+    .circles-carousel{
+        display:flex;
+        flex-flow:column wrap;
+        background-color:map-get($colors,"content-back-color");
+    }
+   
+    .article-carousel{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        width:100%;
+       
+        .carousel-item{
+            width:30vw;
+            p{
+                text-align:center;
+               
+            }
+        }
+    }
+}
+
+.circles{
+    
+    
+    display:flex;
+    flex-flow:row-wrap;
+     justify-content: space-around;
+    background-color:map-get($colors,"content-back-color");
+
+    padding:10vmax;
+   
+    align-items:stretch;
+    &>div{
+        width:15vw;
+        .circle
+        {
+            background-color:map-get($colors,"circle-back-color");
+            border:3px solid map-get($colors,"circle-border-color");
+        }
+        /*
+
+        display:grid;
+        flex-flow:column wrap;
+        */
+        
+
+    }
+}
+
+    .circle{
+       width:175px;
+       height:175px;
+       border-radius:50%;
+       background-color:map-get($map:$colors , $key:"circle-back-color" );
+       border:3px solid map-get($map:$colors,$key:"circle-border-color");
+       margin:0 auto;
+    
+    }
+    .circle-content strong{
+     color:map-get($colors,"strong-back-color");
+        background-color:map-get($colors,"strong-back-color");
+        text-align:center;
+       
+
+    }
+    .circle-content p{
+        color:map-get($colors,"pagraph-color");
+        background-color:map-get($colors,"pagraph-color");
+        text-align:center;
+    }
+.articles{
+    background-color:map-get($colors,"content-back-color");
+     .articles-wrapper{
+        display:grid;
+        grid-template-columns:30% 30% 1fr;
+        .big-article{
+            grid-area:1/3/span 2/span 2;
+        }
+        .article{
+            padding:10px;
+        }
+}
+    
+}
+.other-wrapper{
+    background-color:map-get($colors,"content-back-color");
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    div{
+       margin:20px;
+        width:20vw;
+    }
+
+
+}
+.other-column {
+     div{
+         width:300px;
+         height:300px;
+      
+         margin:0 auto;
+     }
+}
+footer{
+    height:50%;
+    background-color:#70CBF7;
+   
+}
+
+
+
+
+
+
+
+
+
+

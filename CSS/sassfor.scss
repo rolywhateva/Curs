@@ -1,0 +1,19 @@
+@for $i from 1 through 3{
+    .col-#{$i}{
+        width:30%;
+        display:inline-block;
+        background-color:yellow;
+        border:3px solid green;
+        
+        margin:3px;
+    }
+    
+}
+$size:20px;
+@for $p-index from 1 through 6{
+    .p-#{$p-index}
+    {
+         font-size:$size;
+         $size:$size+20;
+    }
+}

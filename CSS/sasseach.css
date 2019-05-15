@@ -1,0 +1,92 @@
+.red-div {
+  background-color: red;
+  height: 10;
+  border: 20px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+.yellow-div {
+  background-color: yellow;
+  height: 20;
+  border: 30px solid black;
+  width: 60px;
+  height: 60px;
+}
+
+.blue-div {
+  background-color: blue;
+  height: 30;
+  border: 40px solid black;
+  width: 80px;
+  height: 80px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.red-text {
+  color: red;
+}
+
+.h-1 {
+  font-size: 10;
+}
+
+.h-2 {
+  font-size: 20;
+}
+
+.h-3 {
+  font-size: 30;
+}
+
+.h-4 {
+  font-size: 40;
+}
+
+.h-5 {
+  font-size: 50;
+}
+
+.h-6 {
+  font-size: 60;
+}
+
+.h-7 {
+  font-size: 70;
+}
+
+.h-8 {
+  font-size: 80;
+}
+
+.h-9 {
+  font-size: 90;
+}
+
+.h-10 {
+  font-size: 100;
+}
+
+.h-11 {
+  font-size: 110;
+}
+
+.h-12 {
+  font-size: 120;
+}
+
+.h-13 {
+  font-size: 130;
+}
+
+.h-14 {
+  font-size: 140;
+}
+/*# sourceMappingURL=sasseach.css.map */

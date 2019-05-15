@@ -1,0 +1,23 @@
+$size:15px;
+$yellow:yellow;
+//mixin
+@mixin give-font($family,$color,$size)
+{
+   font-family:$family;
+    color:$color;
+    font-size:$size;
+}
+div{
+    //how to include
+    @include give-font("Verdana",red,25);
+    p {
+        @include give-font("Georgia",yellow,14);
+    
+        strong{
+            font-weight:900;
+            @include give-font("Arial",purple,36);
+
+        }
+       
+      }
+}

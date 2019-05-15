@@ -1,0 +1,19 @@
+div {
+  font-family: "Verdana";
+  color: red;
+  font-size: 25;
+}
+
+div p {
+  font-family: "Georgia";
+  color: yellow;
+  font-size: 14;
+}
+
+div p strong {
+  font-weight: 900;
+  font-family: "Arial";
+  color: purple;
+  font-size: 36;
+}
+/*# sourceMappingURL=mixin.css.map */

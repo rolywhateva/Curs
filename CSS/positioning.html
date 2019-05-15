@@ -1,0 +1,64 @@
+<html> 
+    <head> 
+        <style> 
+            .box1
+            {
+                width:600px;
+                height:400px;
+                background-color:yellowgreen;
+                box-sizing:border-box;
+               /* padding:30px;*/
+                margin-top:20px;
+            }
+            .box2{
+                width:300px;
+                height:120px;
+                background-color:yellow;
+                box-sizing:border-box;
+                padding:30px;
+            }
+            .position-static{
+                position:static;
+
+            }
+            .position-relative{
+                position:relative;
+                top:50;
+                left:25;
+
+            }
+            .position-absolute{
+                position:absolute;
+                left:50;
+                bottom:25;
+            }
+        
+        </style> 
+    </head>
+    <body> 
+        <div class="box1"> 
+            <div class="box2 position-static"> 
+                Hello
+            </div>
+
+        </div> 
+        <div class="box1"> 
+                <div class="box2 position-relative"> 
+                    Hello
+                </div>
+    
+        </div> 
+        <div class="box1" style="position:relative"> 
+                <div class="box2 position-absolute"> 
+                    Hello
+                </div>
+    
+        </div> 
+    </body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,36 @@
+@mixin div-dimension($width,$height)
+{
+    width:$width;
+    height:$height;
+}
+@mixin give-div-color($divtype)
+{
+    //if
+    @if $divtype==danger{
+        background-color:crimson;
+    }
+    @else if $divtype==attention{
+            background-color:yellow;
+    }
+    @else if $divtype == confusion{
+                background-color:lightblue;
+    }
+        
+ }
+
+
+
+div{
+    @include div-dimension(300px,400px );
+    
+}
+div.danger{
+  @include give-div-color(danger);
+}
+div.attention{
+    @include give-div-color(attention);
+}
+div.confusion{
+    @include give-div-color(confusion);
+}
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAC,IAAI;CAKnB;;AAND,AAEI,CAFH,CAEG,MAAM,CAAA;EACL,SAAS,EAAC,KAAK;EACf,KAAK,EAAC,GAAG;CACT",
+    "sources": [
+        "sassnesting.scss"
+    ],
+    "names": [],
+    "file": "sassnesting.css"
+}

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <style> 
+        .container1{
+            display:flex;
+            background-color:dodgerblue;
+            
+         
+            
+
+        }
+        [class^="container"]
+        {
+            margin-bottom:5px;
+        }
+        [class^="container"] div{
+            
+            background-color:lightgray;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        
+        }
+        /*
+        flex-direction : 
+        row (default)  1 2 3 ...  
+        column 
+        1
+        2
+        3
+        row-reverse (... 3 2 1 ) 
+        column-reverse 
+        3
+        2
+        1
+        */
+        
+        .container2{
+            display:flex;
+            background-color:firebrick;
+            flex-direction:row;
+        }
+        .container3{
+            display:flex;
+            background-color:goldenrod;
+            flex-direction:column;
+        }
+        .container4{
+            display:flex;
+            background-color:lightpink;
+             flex-direction:row-reverse;
+        }
+        .container5{
+            display:flex;
+            background-color:magenta;
+            flex-direction:column-reverse;
+        }
+        /*
+        flex-wrap :  should the elements wrap or not? 
+        wrap
+        nowrap
+        wrap-reverse
+
+        */
+    /*Resize browser to see the difference */
+        .container6{
+             display:flex;
+             background-color:olive;
+             flex-direction:row;
+              flex-wrap:wrap;
+        }
+        .container7{
+             display:flex;
+             background-color:seagreen;
+
+             flex-direction:row;
+              flex-wrap:nowrap;
+        }
+        .container8{
+            display:flex;
+            background-color:slateblue;
+            flex-direction:row;
+            flex-wrap:wrap-reverse;
+        }
+  /* flex-flow : [flex-direction][flex-wrap]*/
+     .container9{
+         display:flex;
+         background-color:violet;
+         flex-flow:row-reverse wrap-reverse;
+     } 
+     /*
+     justify-content : align all children to center,right, left etc.
+     center
+     flex-start
+     flex-end
+     space-around
+     space-between
+     */
+     .container10{
+         display:flex;
+         background-color:brown;
+         flex-flow:row wrap;
+         justify-content: center;
+     }
+     .container10{
+         display:flex;
+         background-color:cornflowerblue;
+         flex-flow:row wrap;
+         justify-content:flex-start;
+     }
+     .container11{
+         display:flex;
+         background:linear-gradient(to right,white,yellow,orange,brown,red,orange,yellow,white);
+         flex-flow:row wrap;
+         justify-content:flex-end;
+     }
+     .container12{
+         display:flex;
+         background:radial-gradient(white,lightblue,dodgerblue,blue,lightblue,white);
+         flex-flow:row wrap;
+         justify-content:space-around;
+
+     }
+     .container13{
+         display:flex;
+         background:radial-gradient(white,#EEEE,#aaaa,#777,lightgray,gray,black,#777,#EEE,white);
+
+         flex-flow:row wrap;
+         justify-content:space-between;
+         
+     }
+     .container14{
+         display:flex;
+         background-color:sienna;
+         flex-flow:row wrap;
+     }
+     /*
+     align-items (vertically) 
+     center
+     flex-start
+     flex-end
+     stretch( fill the whole container) 
+
+     */
+     .container15
+     {
+         
+        display:flex;
+        height:200px;
+        background-color:peru;
+        flex-flow:row wrap;
+        align-items:flex-start;
+     }
+     .container16{
+         display:flex;
+         height:200px;
+         background-color:greenyellow;
+         flex-flow:row wrap;
+         align-items:flex-end;
+     }
+     .container17
+     {
+         display:flex;
+         height:200px;
+         background-color:aqua;
+         flex-flow:row wrap;
+         align-items:center;
+
+     }
+     .container18{
+         display:flex;
+         height:200px;
+         background-color:burlywood;
+         flex-flow:row wrap;
+         align-items:baseline;
+     }
+     .container19{
+         display:flex;
+         height:200px;
+         background-color:coral;
+         flex-flow:row wrap;
+         align-items:stretch;
+        
+     }
+       /*
+     align-content
+     space between
+     space-around
+    
+     */
+     .container20
+     {
+        display:flex;
+        height:600px;
+        flex-flow: row wrap;
+        align-content:space-between;
+        background-color:darkgreen;
+     }
+      .container21{
+          display:flex;
+          height:600px;
+          flex-flow:row wrap;
+          align-content:space-around;
+          background-color:darkseagreen;
+      }
+      .container22{
+          display:flex;
+          height:600px;
+          flex-flow:row wrap;
+          align-content:stretch;
+          background-color:slateblue;
+      }
+      .container23{
+          display:flex;
+          height:600px;
+          flex-flow:row wrap;
+          align-content:center;
+          background-color:crimson;
+      }
+      .container24{
+          display:flex;
+          height:600px;
+          flex-flow:row wrap;
+          align-content:flex-start;
+          background-color:yellow;
+      }
+      .container25{
+          display:flex;
+          height:600px;
+          flex-flow:row wrap;
+          align-content:flex-end;
+          background-color:violet;
+      }
+      .container26{
+          display:flex;
+          height:300px;
+          flex-flow:row wrap;
+          align-content:space-around;
+          background-color:hotpink;
+      }
+      .container27{
+          display:flex;
+          height:300px;
+          flex-flow:row wrap;
+          align-content:space-around;
+          background-color:palegoldenrod;
+
+      }
+        </style> 
+    </head>
+    <body>
+        <div class="container1"> 
+            <div> 1 </div>
+            <div> 2 </div>
+            <div> 3 </div>
+
+        </div>
+        <div class="container2"> 
+                <div> 1 </div>
+                <div> 2 </div>
+                <div> 3 </div>
+    
+            </div>
+            <div class="container3"> 
+                    <div> 1 </div>
+                    <div> 2 </div>
+                    <div> 3 </div>
+        
+                </div>
+                <div class="container4"> 
+                        <div> 1 </div>
+                        <div> 2 </div>
+                        <div> 3 </div>
+                        <div> 4 </div>
+                        <div> 5 </div>
+                        <div> 6 </div>
+                        <div> 7 </div>
+                        <div> 8 </div>
+                        <div> 9 </div>
+            
+                    </div>
+                    <div class="container5"> 
+                            <div> 1 </div>
+                            <div> 2 </div>
+                            <div> 3 </div>
+                            <div> 4 </div>
+                            <div> 5 </div>
+                            <div> 6 </div>
+                            <div> 7 </div>
+                            <div> 8 </div>
+                            <div> 9 </div>
+                
+                        </div>
+                        <div class="container6"> 
+                                <div> 1 </div>
+                                <div> 2 </div>
+                                <div> 3 </div>
+                                <div> 4 </div>
+                                <div> 5 </div>
+                                <div> 6 </div>
+                                <div> 7 </div>
+                                <div> 8 </div>
+                                <div> 9 </div>
+                                <div> 10 </div>
+                                <div> 12 </div>
+                                <div> 13 </div>
+                                <div> 14 </div>
+                                <div> 15 </div>
+                                <div>16 </div>
+                                <div> 17 </div>
+                                <div>18 </div>
+                                <div> 19 </div>
+                    
+                            </div>
+                            <div class="container7"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                        
+                            </div>
+                            <div class="container8"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                        
+                            </div>
+                            <div class="container9"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                        
+                            </div>
+                            <div class="container10"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                        
+                            </div>
+                            <div class="container11"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                        
+                            </div>
+                            <div class="container12"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                   
+                        
+                            </div>
+                            <div class="container13"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                   
+                        
+                            </div>
+                            <div class="container14"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                   
+                        
+                            </div>
+                            <div class="container15"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                  
+                                   
+                        
+                            </div>
+                            <div class="container16"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                  
+                                   
+                        
+                            </div>
+                            <div class="container17"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                 
+                                  
+                                   
+                        
+                            </div>
+                            <div class="container18"> 
+                                    <div> 134234324234234234 </div>
+                                    <div> 2 3234234234</div>
+                                    <div> 3234234234234234234234234234234 </div>
+                                   
+                                 
+                                  
+                                   
+                        
+                            </div>
+                            <div class="container19"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                 
+                                  
+                                   
+                        
+                            </div>
+                            <div class="container20"> 
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+                                   
+                        
+                            </div>
+                            <div class="container21">
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+
+
+                            </div>
+                            <div class="container22">
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+
+
+                            </div>
+                            <div class="container23">
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                    <div> 26 </div>
+                                    <div>27 </div>
+                                    <div> 28</div>
+                                    <div> 29 </div>
+                                    <div> 30 </div>
+                                    <div> 31 </div>
+                                    <div> 32 </div>
+                                    <div>33 </div>
+                                    <div> 34 </div>
+                                    <div>35</div>
+
+
+                            </div>
+                            <div class="container24">
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 12 </div>
+                                    <div> 13 </div>
+                                    <div> 14 </div>
+                                    <div> 15 </div>
+                                    <div>16 </div>
+                                    <div> 17 </div>
+                                    <div>18 </div>
+                                    <div> 19 </div>
+                                    <div> 21 </div>
+                                    <div> 22 </div>
+                                    <div> 23 </div>
+                                    <div> 24 </div>
+                                    <div>25</div>
+                                  
+                               
+
+
+                            </div>
+                            <div class="container25">
+                                    <div> 1 </div>
+                                    <div> 2 </div>
+                                    <div> 3 </div>
+                                    <div> 4 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                    <div> 5 </div>
+                                    <div> 6 </div>
+                                    <div> 7 </div>
+                                    <div> 8 </div>
+                                    <div> 9 </div>
+                                    <div> 10 </div>
+                                   
+                               
+                                  
+
+                            </div>
+
+  <div class="container26">
+                                    <div style="order:-35"> 1 </div>
+                                    <div style="order:23"> 2 </div>
+                                    <div style="order:0"> 3 </div>
+                                    <div style="order:1"> 4 </div>
+                                    <div style="order:5676"> 5</div>
+                                  
+
+                            </div>
+                            <div class="container27">
+                                    <div style="flex-grow:3" > 1 </div>
+                                    <div style="flex-grow:1"> 2 </div>
+                                    <div style="flex-shrink:2" > 3 </div>
+                                    <div style="flex-grow:1" > 4 </div>
+                                    <div style="flex-grow:3"> 5</div>
+                                  
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>

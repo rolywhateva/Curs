@@ -1,0 +1,52 @@
+
+
+.flex{
+    display:flex;
+}
+.flex-direction-row{
+    flex-direction:row;
+}
+.flex-wrap-wrap{
+    flex-wrap:wrap;
+}
+.flex-justify-content-space-around{
+     justify-content: space-around;
+}
+.flex-align-items-center{
+    align-items:center;
+}
+.flex-align-items-baseline{
+     align-items:baseline;
+}
+.flex div{
+    width:15em;
+}
+/* styling*/
+.flex>div{
+    border:2px solid black;
+
+}
+.flex>div p{
+   text-align:justify;
+}
+.flex>div p::first-letter{
+ font-size: 30px;
+}
+@media screen and (max-width:736px)
+{
+    .flex-direction-row{
+        flex-direction:column;
+
+    }
+    .flex div{
+        width:100%;
+    }
+    .flex>div{
+        border-width:0px 0px 2px;
+
+       
+    
+    }
+}
+
+

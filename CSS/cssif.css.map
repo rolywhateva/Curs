@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAqBA,AAAA,GAAG,CAAA;EAnBC,KAAK,EAoBkB,KAAK;EAnB5B,MAAM,EAmBuB,KAAK;CAErC;;AACD,AAAA,GAAG,AAAA,OAAO,CAAA;EAjBF,gBAAgB,EAAC,OAAO;CAmB/B;;AACD,AAAA,GAAG,AAAA,UAAU,CAAA;EAjBD,gBAAgB,EAAC,MAAM;CAmBlC;;AACD,AAAA,GAAG,AAAA,UAAU,CAAA;EAjBG,gBAAgB,EAAC,SAAS;CAmBzC",
+    "sources": [
+        "cssif.scss"
+    ],
+    "names": [],
+    "file": "cssif.css"
+}

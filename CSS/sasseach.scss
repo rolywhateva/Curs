@@ -1,0 +1,28 @@
+$counter:1;
+//a list 
+$colors:(color1:blue,color2:yellow,color3:red);
+//each for some values 
+@each $color in red,yellow,blue{
+    .#{$color}-div{
+        background-color:$color;
+        height:10*$counter;
+        $counter:$counter+1;
+        border:$counter*10px solid black;
+        width:$counter*20px;
+        height:$counter*20px;
+
+    }
+}
+//each for a list
+@each $key,$color in $colors{
+    .#{$color}-text{
+        color:$color;
+    }
+}
+//while 
+$x:1;
+@while $x<15{
+ .h-#{$x}{font-size:$x*10};
+ $x:$x+1;
+}
+
