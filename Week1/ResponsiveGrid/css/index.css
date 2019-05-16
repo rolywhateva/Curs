@@ -1,0 +1,216 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+body {
+  background-color: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: #333;
+  color: #eee;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+/*Navigation*/
+.main-nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav ul a {
+  background-color: #ddd;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+}
+
+.main-nav ul a:hover {
+  background-color: #333;
+  color: #eee;
+}
+
+.top-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+      grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+
+/*Showcase*/
+.showcase {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: showcase;
+  min-height: 400px;
+  background: url("../images/showcase2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3 rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: #eee;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: #eee;
+}
+
+.top-box {
+  background: #ddd;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: top-box-b;
+}
+
+/*Boxes*/
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+}
+
+.info {
+  background: #ddd;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.portofolio {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portofolio img {
+  width: 100%;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0);
+}
+
+footer {
+  margin-top: 2rem;
+  background: #333;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .top-container {
+        grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
+  }
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+  .main-nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+        grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+  }
+}
+/*# sourceMappingURL=index.css.map */
