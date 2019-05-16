@@ -96,10 +96,11 @@ body{
     }
      main{
         display:grid;
-        height:50%;
+        height:70vh;
         color:map-get($colors,"content-bar-color");
         background-color:map-get($colors,"strong-back-color");
         justify-content: center;
+        align-items:center;
         padding:10vh 0;
         flex-flow:row-wrap;
         h1{
@@ -220,7 +221,8 @@ body{
      div{
          width:300px;
          height:300px;
-      
+        
+         border:3px solid black;
          margin:0 auto;
      }
 }
