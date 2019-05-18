@@ -1,0 +1,107 @@
+/*Variables*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-mark {
+  background-color: #a80038;
+  color: #fbf9fa;
+}
+
+.button {
+  background-color: #333;
+  color: #fbf9fa;
+  padding: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #fd0054;
+  color: #2b2024;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #fbf9fa;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.40rem 0.55rem;
+  text-align: center;
+  background-color: #fd0054;
+  color: #2b2024;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  -webkit-box-shadow: 0 3px 8px black;
+          box-shadow: 0 3px 8px black;
+  text-decoration: none;
+  color: #2b2024;
+}
+
+#logo {
+  margin-right: 3vw;
+  color: #2b2024;
+  width: 100%;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/header-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fbf9fa;
+  text-shadow: 0px 4px 30px #2b2024;
+}
+
+.header h1 {
+  font-size: 6vw;
+}
+
+.header p {
+  font-size: 2.25vw;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

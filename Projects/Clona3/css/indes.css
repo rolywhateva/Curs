@@ -1,0 +1,24 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  /*display:flex;*/
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  list-style-type: none;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav ul li {
+  display: inline;
+}
+/*# sourceMappingURL=indes.css.map */

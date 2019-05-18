@@ -43,6 +43,10 @@ function minus(a,b)
    else
      return a-b;
 }
+function  add(a,b=0)
+{
+  return a+b;
+}
 function power2(base, exponent=2)
 {
   var result = 1;
