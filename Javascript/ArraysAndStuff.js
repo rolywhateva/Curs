@@ -1,4 +1,7 @@
-
+/**
+ * 
+ * Documentation
+ */
 function sum(d)
 {
   var s  =0;
