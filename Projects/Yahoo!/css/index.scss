@@ -1,0 +1,223 @@
+@font-face{
+    font-family:yahoo;
+    src: url(../fonts/Yahoo.ttf);
+}
+
+$main-back-color:#2D1053;
+$second-back-color:#FFFF;
+$main-text-color:#FFF5FF;
+$second-text-color:#A3A3A3;
+$social-text-color:#FFFDFF;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   
+
+}
+
+body{
+     padding:9vh 14vw 5vh;
+     background-color:$main-back-color;
+   
+
+}
+a{
+    display:inline-block;
+    text-decoration:none;
+    color:$main-text-color;
+    font-size:16px;
+    font-weight: 400;
+    font-family:"Times New Roman";
+
+  
+
+}
+.banner{
+    display:flex;
+    flex-direction:row wrap;
+    justify-content: space-between;
+    text-align:center;
+  
+   
+    text-transform:capitalize;
+   
+     a:hover{
+             text-decoration: underline;
+         }
+
+
+    
+}
+#mail{
+    padding:20px;
+    padding-left:2px;
+}
+#login{
+    padding:20px;
+    padding-right:2px;
+}
+main{
+    background-color:$second-back-color;
+    box-shadow:0px 10px  80px black;
+    border-radius:10px;
+    overflow:hidden;
+ 
+    display:flex;
+    justify-content:center;
+    flex-flow:column wrap;
+
+     a{
+         color:$second-text-color;
+         display:inline-block;
+       
+      
+        
+      
+     }
+     h1{
+         grid-area:header;
+         text-align:center;
+         font-size:6.5vw;
+         padding:5.6vh 3.5vw;
+        text-transform:uppercase;
+        font-family:yahoo;
+         color:$main-back-color;
+        font-weight:400;
+        letter-spacing: 0.33vw;
+         
+     }
+     .wrapper
+     {
+       display:flex;
+       flex-flow:column wrap;
+       align-content:center;
+            .links
+            {
+                display:flex;
+                flex-flow:row wrap;
+                justify-content:space-between;
+                margin-bottom:2vh;
+                 width:75%;
+             }
+             a{
+                padding:0.5vh 0.5vw;
+             }
+             #web{
+                margin-left:0;
+             }
+             #movies{
+                 margin-right:0;
+             }
+             .search
+             {
+                 width:75%;
+                 position:relative;
+
+                 
+             }
+             input[type="text"]
+             {
+                height:5vh;
+                width:100%;
+                 color:black;
+                 text-indent:0.75vw;
+                 border-radius:5px;
+                  border-style:solid;
+                  border-width:0.5px;
+                  border-color:lightgray;
+                  
+                  &:focus{
+                      outline-color:purple;
+                  }
+             }
+           
+           
+
+          
+    }
+    
+   
+     
+}
+.fa-search{
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:$main-back-color;
+   
+}
+
+#weather{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    
+    img{
+       widows:100px;
+       height:100px;
+       
+    }
+    
+   
+}
+
+
+  .weather-card,.weather-wrapper{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items:center;
+      justify-content: center;
+      
+  }
+  .location{
+      text-align:center;
+      #location-name{
+        font-size:2rem;
+      }
+  }
+  .side-temperature{
+   
+    text-align:left;
+}
+ 
+
+footer{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  h3{
+      padding:7.5vh 4.5vw;
+      font-size:5.6vh;
+      color:$social-text-color;
+      font-weight:bolder;
+  }  
+}
+.active{
+    color:$main-back-color;
+   //outline:1px solid #cbcbcb;
+   position: relative;
+   &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 6px;
+        border: 2px solid #cbcbcb;
+   }
+  
+     
+   
+  
+
+
+}
+
+
+
+
+
+ 

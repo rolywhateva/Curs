@@ -1,0 +1,236 @@
+@font-face {
+  font-family: yahoo;
+  src: url(../fonts/Yahoo.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 9vh 14vw 5vh;
+  background-color: #2D1053;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF5FF;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Times New Roman";
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+#mail {
+  padding: 20px;
+  padding-left: 2px;
+}
+
+#login {
+  padding: 20px;
+  padding-right: 2px;
+}
+
+main {
+  background-color: #FFFF;
+  -webkit-box-shadow: 0px 10px  80px black;
+          box-shadow: 0px 10px  80px black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+main a {
+  color: #A3A3A3;
+  display: inline-block;
+}
+
+main h1 {
+  grid-area: header;
+  text-align: center;
+  font-size: 6.5vw;
+  padding: 5.6vh 3.5vw;
+  text-transform: uppercase;
+  font-family: yahoo;
+  color: #2D1053;
+  font-weight: 400;
+  letter-spacing: 0.33vw;
+}
+
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .wrapper .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2vh;
+  width: 75%;
+}
+
+main .wrapper a {
+  padding: 0.5vh 0.5vw;
+}
+
+main .wrapper #web {
+  margin-left: 0;
+}
+
+main .wrapper #movies {
+  margin-right: 0;
+}
+
+main .wrapper .search {
+  width: 75%;
+  position: relative;
+}
+
+main .wrapper input[type="text"] {
+  height: 5vh;
+  width: 100%;
+  color: black;
+  text-indent: 0.75vw;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightgray;
+}
+
+main .wrapper input[type="text"]:focus {
+  outline-color: purple;
+}
+
+.fa-search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #2D1053;
+}
+
+#weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#weather img {
+  widows: 100px;
+  height: 100px;
+}
+
+.weather-card, .weather-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location {
+  text-align: center;
+}
+
+.location #location-name {
+  font-size: 2rem;
+}
+
+.side-temperature {
+  text-align: left;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h3 {
+  padding: 7.5vh 4.5vw;
+  font-size: 5.6vh;
+  color: #FFFDFF;
+  font-weight: bolder;
+}
+
+.active {
+  color: #2D1053;
+  position: relative;
+}
+
+.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  border: 2px solid #cbcbcb;
+}
+/*# sourceMappingURL=index.css.map */
