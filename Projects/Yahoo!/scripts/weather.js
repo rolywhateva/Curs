@@ -1,5 +1,5 @@
-(function(){
-  export default  class RandomWeatherGenerator{
+
+   export class RandomWeatherGenerator{
         constructor(min,max)
         {
         
@@ -27,7 +27,7 @@
    
    
    }
-}());
+
   
 
 

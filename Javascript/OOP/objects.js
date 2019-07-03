@@ -1,8 +1,11 @@
+//example of  a JS object
+
 let personJohn={
     name:"John",
     age:12,
     
 }
+
 for(let prop in personJohn)
 {
       console.log(personJohn[prop]);

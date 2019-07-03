@@ -8,6 +8,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 body {
